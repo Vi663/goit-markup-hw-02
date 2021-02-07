@@ -1,0 +1,116 @@
+* {
+  text-decoration: none;
+}
+
+:root {
+  --black-logo: #000000;
+  --black-text: #212121;
+  --white-text: #ffffff;
+  --gray-text: #757575;
+  --blue-text: #2196F3;
+  --elements-gray: #2F303A;
+}
+
+header {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+main {
+  font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  color: var(--black-logo);
+}
+
+.navlink {
+  list-style: none;
+  color: var(--black-text);
+}
+
+.navlink :hover {
+  list-style: none;
+  color: var(--blue-text);
+}
+
+.contacts {
+  color: var(--gray-text);
+
+}
+
+.contacts :hover {
+  color: var(--blue-text);
+
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  width: 611px;
+  height: 54px;
+  left: 495px;
+  top: 174px;
+}
+
+.button {
+  list-style: none;
+  color: var(--black-logo);
+  
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30px 30px 30px;
+}
+
+.card {
+  list-style: none;
+  height: 404px;
+  width: 370px;
+  border-radius: 0px;
+  border: 1px solid;
+  border-color: rgba 238,238,238,1;
+}
+
+.picture {
+
+}
+
+.project {
+  color: var(--black-text);
+  font-size: 18px;
+  font-weight: 700;
+  padding-left: 24px;
+  padding-bottom: 24px;
+}
+
+.description {
+  color: var(--gray-text);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+
+  /* identical to box height, or 187% */
+  letter-spacing: 0.03em;
+  padding-left: 24px;
+  padding-bottom: 24px;
+}
+
+footer {
+
+}
+
+address {
+
+}
