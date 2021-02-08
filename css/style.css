@@ -29,6 +29,7 @@ main {
   color: var(--black-logo);
 }
 
+
 .navlink {
   list-style: none;
   color: var(--black-text);
@@ -90,12 +91,11 @@ main {
   font-size: 18px;
   font-weight: 700;
   padding-left: 24px;
-  padding-bottom: 24px;
 }
 
 .description {
   color: var(--gray-text);
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -108,9 +108,31 @@ main {
 }
 
 footer {
+  background-color: #2F303A;
+  color: var(--white-text);
+  width: 1600px;
+  height: 252px;
+  left: 0px;
+  top: 1628px;
+}
 
+.web{
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+
+  /* identical to box height */
+  letter-spacing: 0.03em;
+
+  color: var(--blue-text);
+}
+
+.studio{
+  color: var(--white-text);
 }
 
 address {
-
+  color: var(--white-text);
 }
