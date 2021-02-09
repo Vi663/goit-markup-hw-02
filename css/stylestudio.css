@@ -1,0 +1,177 @@
+* {
+  text-decoration: none;
+}
+
+:root {
+  --black-logo: #000000;
+  --black-text: #212121;
+  --white-text: #ffffff;
+  --gray-text: #757575;
+  --blue-text: #2196f3;
+  --elements-gray: #2f303a;
+}
+
+header {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+main {
+  font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  color: var(--black-logo);
+}
+
+.navlink {
+  list-style: none;
+  color: var(--black-text);
+}
+
+.navlink :hover {
+  list-style: none;
+  color: var(--blue-text);
+}
+
+.contacts {
+  color: var(--gray-text);
+}
+
+.contacts :hover {
+  color: var(--blue-text);
+}
+
+.dialing {
+  background-color: var(--elements-gray);
+  width: 1600px;
+  height: 600px;
+  left: 0px;
+  top: 80px;
+}
+
+.header1 {
+  position: absolute;
+  width: 696px;
+  height: 120px;
+  left: 452px;
+  top: 280px;
+
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  /* or 136% */
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--white-text);
+}
+
+.button {
+  color: var(--white-text);
+  position: absolute;
+  width: 136px;
+  height: 30px;
+  left: 732px;
+  top: 440px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 187% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  background-color: var(--blue-text);
+}
+
+.features {
+  list-style: none;
+}
+
+.feature {
+  list-style: none;
+}
+
+.header3 {
+
+}
+
+.feature-item {
+  
+}
+
+.work {
+  
+}
+
+.box {
+  list-style: none;
+}
+
+.box-image {
+  list-style: none;
+}
+
+.team {
+}
+
+.header2 {
+}
+
+.team-card {
+  list-style: none;
+}
+
+.photo {
+  
+}
+
+.name {
+}
+
+.job {
+}
+
+footer {
+  background-color: #2f303a;
+  color: var(--white-text);
+  width: 1600px;
+  height: 252px;
+  left: 0px;
+  top: 1628px;
+}
+
+.web {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+
+  /* identical to box height */
+  letter-spacing: 0.03em;
+
+  color: var(--blue-text);
+}
+
+.studio {
+  color: var(--white-text);
+}
+
+address {
+  color: var(--white-text);
+}
