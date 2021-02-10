@@ -49,10 +49,18 @@ main {
 
 .mail {
   color: var(--gray-text);
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 16,41px;
 }
 
 .tel {
   color: var(--gray-text);
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 16,41px;
 }
 .mail:hover {
   color: var(--blue-text);
@@ -75,7 +83,6 @@ main {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--black-text);
-  
 }
 
 .button:hover {

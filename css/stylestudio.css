@@ -49,15 +49,24 @@ main {
 
 .mail {
   color: var(--gray-text);
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 16,41px;
 }
 
 .tel {
   color: var(--gray-text);
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 16,41px;
 }
+
 .mail:hover {
   color: var(--blue-text);
 }
-.tel:hover {
+.tel :hover {
   color: var(--blue-text);
 }
 
@@ -204,3 +213,6 @@ address {
 .contacts {
   color: var(--gray-text);
 }
+
+
+
