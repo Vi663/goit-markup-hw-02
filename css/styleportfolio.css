@@ -76,6 +76,7 @@ main {
 
 .buttons {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   list-style: none;
   font-family: 'Roboto', sans-serif;
@@ -113,11 +114,9 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  display: flex;
   flex-direction: row;
-  justify-content: space-around;
   align-items: center;
-  margin: 30px 30px 30px;
+  margin: 30px 30px;
 }
 
 .card {
