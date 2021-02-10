@@ -9,6 +9,8 @@
   --gray-text: #757575;
   --blue-text: #2196f3;
   --elements-gray: #2f303a;
+  --button-bg-non-active: #F5F4FA;
+  --button-bg-active: #2196F3;
 }
 
 header {

@@ -9,6 +9,8 @@
   --gray-text: #757575;
   --blue-text: #2196F3;
   --elements-gray: #2F303A;
+  --button-bg-non-active: #F5F4FA;
+  --button-bg-active: #2196F3;
 }
 
 header {
@@ -16,6 +18,7 @@ header {
 }
 
 a {
+  list-style: none;
   text-decoration: none;
   color: inherit;
 }
@@ -35,6 +38,8 @@ main {
 
 .navlink {
   list-style: none;
+  position: relative;
+  display: inline-block;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -70,11 +75,21 @@ main {
 }
 
 .buttons {
-
+  list-style: none;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
 }
 
 .button {
   list-style: none;
+  position: relative;
+  display: inline-block;
+  padding: 6px 22px;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -83,10 +98,13 @@ main {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--black-text);
+  background-color: var(--button-bg-non-active);
+
 }
 
 .button:hover {
   color: var(--white-text);
+  background-color: var(--button-bg-active);
 }
 
 .cards {
