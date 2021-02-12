@@ -2,6 +2,12 @@
   text-decoration: none;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 :root {
   --black-logo: #000000;
   --black-text: #212121;
@@ -15,6 +21,8 @@
 
 header {
   font-family: 'Roboto', sans-serif;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 a {
@@ -24,6 +32,17 @@ a {
 
 main {
   font-family: 'Roboto', sans-serif;
+
+}
+
+.web{
+  margin: 24px 93px 25px 215px;
+  font-family: 'Raleway', sans-serif;
+  color: var(--blue-text);
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
 }
 
 .logo {
@@ -31,11 +50,13 @@ main {
   color: var(--black-logo);
 }
 
-/* .menu-nav {
-  
-} */
-
-.navlink {
+.menu-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  margin: -20px 308px;
   list-style: none;
   font-weight: 500;
   font-size: 14px;
@@ -44,39 +65,61 @@ main {
   color: var(--black-text);
 }
 
+.navlink {
+  position: relative;
+
+}
+
+.navlink:first-child {
+  padding-left: 93px;
+  padding-right: 50px;
+}
+
+.navlink:last-child {
+  padding-left: 50px;
+}
+
+
 .navlink:hover {
   list-style: none;
   color: var(--blue-text);
 }
 
-.mail {
+.contacts-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
   color: var(--gray-text);
   font-weight: 500;
-  font-style: normal;
   font-size: 14px;
-  line-height: 16,41px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  margin top: -30px;
 }
 
-.tel {
-  color: var(--gray-text);
-  font-weight: 500;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 16,41px;
+.contacts-header :first-child{
+  padding-right: 50px;
 }
 
-.mail:hover {
-  color: var(--blue-text);
+.contacts-header :last-child {
+  margin-right: 215px;
 }
 
-.tel :hover {
+.contacts-header :hover {
   color: var(--blue-text);
 }
 
 .hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: var(--elements-gray);
-  /* max-width: 1600px;
-  max-height: 600px; */
+  max-width: 1600px;
+  max-height: 600px;
+  padding-bottom: 200px;
 }
 
 .header1 {
@@ -84,6 +127,7 @@ main {
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
+  padding: 200px 452px 30px 452px;
 
   /* or 136% */
   text-align: center;
@@ -93,48 +137,78 @@ main {
 }
 
 .button {
+  display: flex;
   color: var(--white-text);
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
+  font-family: inherit;
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
+  border: none;
 
   /* identical to box height, or 187% */
-
-  display: flex;
-  align-items: center;
   text-align: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   letter-spacing: 0.06em;
-
   background-color: var(--blue-text);
+  padding: 10px 32px;
 }
 
 .features {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 1170px;
+  max-height: 101px;
+  margin: 94px 215px;
   list-style: none;
+
+  /* or 171% */
+  color: var(--gray-text);
 }
 
 .feature {
-  list-style: none;
+  /* width: 270px; */
+  max-height: 75px;
+
 }
 
 .header3 {
-  font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--black-text);
+  max-height: 16px;
+  /* width: 270px; */
 }
 
-/* .feature-item {
-  
+.feature-item {
+  list-style: none;
+
+  /* width: 270px; */
+  max-height: 75px;
+  margin-top: 0px;
+  font-size: 14px;
+line-height: 24px;
+
+/* or 171% */
+letter-spacing: 0.03em;
+}
+
+.feature-item :not(last-child) {
+  padding-right: 15px;
+}
+
+.feature-item :not(first-child) {
+  padding-left: 15px;
 }
 
 .work {
-  
-} */
+
+}
 
 .box {
   list-style: none;
@@ -154,7 +228,7 @@ main {
   color: var(--black-text);
 }
 
-/* .team {
+.team {
 
 }
 
@@ -162,17 +236,31 @@ main {
   list-style: none;
 }
 
-/* .photo {
+.photo {
   
 }
 
 .name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
 
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--black-text);
 }
 
 .job {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
 
-} */
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--gray-text);
+}
 
 footer {
   background-color: #2f303a;
