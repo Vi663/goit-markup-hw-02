@@ -169,9 +169,8 @@ main {
 }
 
 .feature {
-  /* width: 270px; */
+  width: 270px;
   max-height: 75px;
-
 }
 
 .header3 {
@@ -182,17 +181,16 @@ main {
   text-transform: uppercase;
   color: var(--black-text);
   max-height: 16px;
-  /* width: 270px; */
+  width: 270px;
 }
 
 .feature-item {
   list-style: none;
-
-  /* width: 270px; */
+  width: 270px;
   max-height: 75px;
   margin-top: 0px;
   font-size: 14px;
-line-height: 24px;
+  line-height: 24px;
 
 /* or 171% */
 letter-spacing: 0.03em;
@@ -207,15 +205,9 @@ letter-spacing: 0.03em;
 }
 
 .work {
-
-}
-
-.box {
-  list-style: none;
-}
-
-.box-image {
-  list-style: none;
+  margin-top: 50px;
+  max-width: 1170px;
+  margin-left: 215px;
 }
 
 .header2 {
@@ -228,12 +220,60 @@ letter-spacing: 0.03em;
   color: var(--black-text);
 }
 
-.team {
+.boxes {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0;
+}
 
+.boxes :not(:first-child) {
+  padding-left: 15px;
+}
+
+.boxes :not(:last-child) {
+  padding-right: 15px;
+}
+
+.box-image {
+  list-style: none;
+}
+
+.team {
+  margin-top: 94px;
+  margin-bottom: 94px;
+  max-width: 1600px;
+}
+
+.team-cont {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 215px;
 }
 
 .team-card {
-  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--white-text);
+  width: 270px;
+
+  /* material shadow v1 */
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  
+}
+
+.team-cont :not(:last-child) {
+  margin-right: 15px;
+}
+
+.team-cont :not(:first-child) {
+  margin-left: 15px;
 }
 
 .photo {
@@ -249,12 +289,16 @@ letter-spacing: 0.03em;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--black-text);
+  padding-top: 30px;
+  margin: 0;
 }
 
 .job {
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
+  padding-bottom: 30px;
+  padding-top: 10px;
 
   /* identical to box height */
   text-align: center;
@@ -265,6 +309,7 @@ letter-spacing: 0.03em;
 footer {
   background-color: #2f303a;
   color: var(--white-text);
+  padding-top: 60px;
 }
 
 .web {
@@ -288,12 +333,13 @@ address {
   font-family: 'Roboto', sans-serif;
   color: var(--white-text);
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.03em;
   text-align: left;
-
+  margin-left: 215px;
+  margin-top: 20px;
+  padding-bottom: 60px;
 }
 
 .contacts {
